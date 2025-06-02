@@ -281,13 +281,13 @@ Successfully leveraging these AI tools relies heavily on providing sufficient co
 
 While powerful, AI agents should be introduced cautiously into critical systems with proper guardrails. It's recommended to start small, pick relevant use cases, and **build responsibly**. The field of agentic AI is still evolving with no single industry standard definition.
 
---
+---
 
-## Resources
+### Resources
 
-*   AI Coding Agents with GitHub Copilot and Cursor (LinkedIn Learning course)
-*   Essential AI Prompts for Developers (VS Code YouTube)
-*   VS Code Agent Mode Just Changed Everything (VS Code YouTube)
-*   CrewAI Examples (GitHub)
-*   Shopping Assistant with LangGraph (GitHub Example)
-*   TheUrlist PRD (Example Requirements Document)
+- [youtube video](https://www.youtube.com/watch?v=dutyOc_cAEU)
+- [Example Requirements Document](https://gist.github.com/burkeholland/24802296b5bfaaf7fb775c81cd626512)
+- [Course AI Coding Agents with GitHub Copilot and Cursor](https://www.linkedin.com/learning/ai-coding-agents-with-github-copilot-and-cursor?u=26890602)
+- [Prompt fundamentals](https://github.com/kurtzace/diary-2024/issues/11#issuecomment-2424979827)
+- [Prompt Strategies](https://www.youtube.com/watch?v=H3M95i4iS5c)
+- [mcp video](https://www.youtube.com/watch?v=LqTQi8qexJM), [Context7](https://github.com/upstash/context7), [Github mcp](https://www.youtube.com/watch?v=d3QpQO6Paeg)
