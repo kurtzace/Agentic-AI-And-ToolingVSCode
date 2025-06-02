@@ -1,0 +1,63 @@
+@startuml component
+!theme amiga
+
+actor User
+
+rectangle "Visual Studio Code Environment" {
+  component Agent as "AI Agent (Agent Mode)"
+  component FetchTool as "#fetch Tool"
+  component QueryTool as "#query Tool"
+  component WorkspaceFiles as "Workspace Files"
+  component Terminal as "Integrated Terminal"
+  rectangle "Project Context Files" {
+    component PRD as "PRD"
+    component Instructions as "Custom Instructions"
+  }
+}
+
+rectangle "Local Machine / Network" {
+  rectangle "MCP Servers" {
+    component PostgresMCP as "Postgres MCP"
+    component Context7 as "Context7 Server"
+    component WebSearchMCP as "Web Search MCP"
+    component MemoryMCP as "Memory MCP"
+    component GithubMCP as "GitHub MCP"
+  }
+}
+
+rectangle "External Systems" {
+  component Database as "Database"
+  component Internet as "Web / Internet"
+  component Github as "GitHub Platform"
+}
+
+User --> PRD : Provides
+User --> Instructions : Provides
+
+Agent --> FetchTool : Uses
+Agent --> QueryTool : Uses
+Agent --> PRD : Reads
+Agent --> Instructions : Reads
+Agent --> WorkspaceFiles : Modifies
+Agent --> Terminal : Executes
+
+QueryTool --> PostgresMCP : Queries
+QueryTool --> Context7 : Docs
+QueryTool --> WebSearchMCP : Search
+QueryTool --> MemoryMCP : Memory
+QueryTool --> GithubMCP : GitHub
+
+FetchTool --> Internet : Reads
+PostgresMCP --> Database : Data
+Context7 --> Internet : Docs
+WebSearchMCP --> Internet : Search
+MemoryMCP --> MemoryMCP : Stores/Retrieves
+GithubMCP --> Github : API
+
+note right of User
+**Prompt Strategies for Developers**
+(Q&A, Pros/Cons, Chain of Thought, Role Prompt)
+These guide User interaction with the AI Agent.
+end note
+
+@enduml

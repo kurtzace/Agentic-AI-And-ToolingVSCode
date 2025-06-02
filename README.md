@@ -258,6 +258,11 @@ Agent Mode allows testing changes without immediately committing them. Using the
 
 --
 
+![image](./assets/diagram.png)
+
+
+--
+
 ## Agentic Capabilities in VS Code
 
 Agent Mode, built-in tools like `#fetch` and `#query` (via MCP), and the ability to provide extensive project context (PRD, instructions, database schema) are **transforming developer workflows**.
