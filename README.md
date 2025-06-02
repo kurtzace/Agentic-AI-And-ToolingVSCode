@@ -23,6 +23,8 @@
 
 # Agentic AI & Tooling in VS Code
 
+[notes](https://github.com/kurtzace/diary-2025/issues/10)
+
 ---
 
 ## Enhancing Developer Workflows with AI Agent
